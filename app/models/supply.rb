@@ -1,3 +1,3 @@
 class Supply < ApplicationRecord
-  belongs_to :bunker
+  has_many :bunkers
 end

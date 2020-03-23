@@ -1,4 +1,4 @@
 class Bunker < ApplicationRecord
-  belongs_to :module
-  belongs_to :supply
+  has_many :supplies
+  belongs_to :user
 end

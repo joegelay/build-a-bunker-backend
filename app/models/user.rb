@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  belongs_to :bunker
+  has_many: bunkers
 end
