@@ -1,0 +1,2 @@
+class BunkerSuppliesController < ApplicationController
+end
