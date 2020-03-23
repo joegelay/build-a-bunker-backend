@@ -22,12 +22,23 @@ hotcorner = Bunker.create name: "Hot Corner", user: evan
 ohiostreet = Bunker.create name: "Ohio Street", user: aaron
 treehouse = Bunker.create name: "Treehouse", user: jared
 
-shotgun = Supply.create name: "Shotgun", value: 10, cost: 10, category: "weapon"
-rifle = Supply.create name: "Shotgun", value: 8, cost: 8, category: "weapon"
-canned = Supply.create name: "Canned Goods - 1 week supply", value: 15, cost: 10, category: "food" 
-frozen = Supply.create name: "Frozen Goods - 1 week supply", value: 12, cost: 8, category: "food"  
-thatch = Supply.create name: "Thatched Roof", value: 4, cost: 5, category: "shelter"
-swimmingpool = Supply.create name: "Swimming Pool", value: 10, cost: 15, category: "health"
+shotgun = Supply.create name: "Shotgun", value: 50, cost: 2000, category: "weapon"
+rifle = Supply.create name: "Rifle", value: 10, cost: 1000, category: "weapon"
+slingshot = Supply.create name: "Slingshot", value: 4, cost: 200, category: "weapon"
+
+canned = Supply.create name: "Canned Goods - 1 week supply", value: 20, cost: 500, category: "food" 
+frozen = Supply.create name: "Frozen Goods - 1 week supply", value: 10, cost: 250, category: "food"  
+pantry = Supply.create name: "Pantry - Extra Food Storage", value: 50, cost: 1000, category: "food"  
+
+thatch = Supply.create name: "Thatched Roof", value: 5, cost: 200, category: "shelter"
+steel = Supply.create name: "Steel Roof", value: 50, cost: 2500, category: "shelter"
+brickwalls = Supply.create name: "Brick Walls", value: 25, cost: 1500, category: "shelter"
+chainlink = Supply.create name: "Chain Link Fence", value: 10, cost: 500, category: "shelter"
+
+swimmingpool = Supply.create name: "Swimming Pool", value: 10, cost: 1000, category: "health"
+netflix = Supply.create name: "Netflix", value: 15, cost: 1500, category: "health"
+gym = Supply.create name: "Gym", value: 10, cost: 750, category: "health"
+tp = Supply.create name: "Toilet Paper", value: 15, cost: 1000, category: "health"
 
 BunkerSupply.create bunker: barnyard, supply: shotgun 
 BunkerSupply.create bunker: barnyard, supply: rifle
@@ -36,7 +47,7 @@ BunkerSupply.create bunker: hotcorner, supply: frozen
 BunkerSupply.create bunker: treehouse, supply: thatch
 BunkerSupply.create bunker: treehouse, supply: swimmingpool
 
-hurricane = Disaster.create name: "Hurricane", food: 20, shelter: 30 , weapon: 0, health: 20
-zombie = Disaster.create name: "Zombie Apocalypse", food: 10, shelter: 15, weapon: 50, health: 20
-coronavirus = Disaster.create name: "Coronavirus", food: 40, shelter: 0, weapon: 0, health: 30
-nuclearwar = Disaster.create name: "Nuclear War", food: 30, shelter: 50, weapon: 50, health: 10
+hurricane = Disaster.create name: "Hurricane", food: 10, shelter: 35, weapon: 0, health: 10
+zombie = Disaster.create name: "Zombie Apocalypse", food: 10, shelter: 15, weapon: 45, health: 20
+coronavirus = Disaster.create name: "Coronavirus", food: 20, shelter: 0, weapon: 0, health: 30
+nuclearwar = Disaster.create name: "Nuclear War", food: 50, shelter: 50, weapon: 50, health: 50
