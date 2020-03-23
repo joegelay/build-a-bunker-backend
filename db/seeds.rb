@@ -58,3 +58,4 @@ hurricane = Disaster.create name: "Hurricane", food: 10, shelter: 35, weapon: 0,
 zombie = Disaster.create name: "Zombie Apocalypse", food: 10, shelter: 15, weapon: 45, health: 20
 coronavirus = Disaster.create name: "Coronavirus", food: 20, shelter: 0, weapon: 0, health: 30
 nuclearwar = Disaster.create name: "Nuclear War", food: 50, shelter: 50, weapon: 50, health: 50
+aliens = Disaster.create name: "Alien Invasion", food: 100, shelter: 100, weapon: 100, health: 100
