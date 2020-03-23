@@ -7,7 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all 
+Bunker.destroy_all 
 Supply.destroy_all 
 Disaster.destroy_all
-Bunker.destroy_all 
 
+
+joe = User.create name: "Joe"
+evan = User.create name: "Evan"
+aaron = User.create name: "Aaron"
+jared = User.create name: "Jared"
+
+walnut = Bunker.create name: "Walnut", 

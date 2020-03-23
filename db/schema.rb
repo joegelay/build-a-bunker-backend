@@ -10,16 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_23_165858) do
+ActiveRecord::Schema.define(version: 2020_03_23_171033) do
 
   create_table "bunkers", force: :cascade do |t|
     t.string "name"
-    t.integer "module_id", null: false
-    t.integer "supply_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["module_id"], name: "index_bunkers_on_module_id"
-    t.index ["supply_id"], name: "index_bunkers_on_supply_id"
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_bunkers_on_user_id"
   end
 
   create_table "disasters", force: :cascade do |t|
@@ -51,8 +49,7 @@ ActiveRecord::Schema.define(version: 2020_03_23_165858) do
     t.index ["bunker_id"], name: "index_users_on_bunker_id"
   end
 
-  add_foreign_key "bunkers", "modules"
-  add_foreign_key "bunkers", "supplies"
+  add_foreign_key "bunkers", "users"
   add_foreign_key "supplies", "bunkers"
   add_foreign_key "users", "bunkers"
 end
