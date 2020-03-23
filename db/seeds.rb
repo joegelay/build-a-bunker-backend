@@ -12,10 +12,10 @@ Bunker.destroy_all
 Supply.destroy_all
 User.destroy_all
 
-joe = User.create name: "Joe"
-evan = User.create name: "Evan"
-aaron = User.create name: "Aaron"
-jared = User.create name: "Jared"
+joe = User.create username: "Joe", email: "joe@joe.com"
+evan = User.create username: "Evan", email: "evan@evan.com"
+aaron = User.create username: "Aaron", email: "aaron@aaron.com"
+jared = User.create username: "Jared", email: "jared@jaren.com"
 
 barnyard = Bunker.create name: "Barnyard", user: joe 
 hotcorner = Bunker.create name: "Hot Corner", user: evan
