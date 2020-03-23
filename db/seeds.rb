@@ -24,17 +24,24 @@ treehouse = Bunker.create name: "Treehouse", user: jared
 
 shotgun = Supply.create name: "Shotgun", value: 50, cost: 2000, category: "weapon"
 rifle = Supply.create name: "Rifle", value: 10, cost: 1000, category: "weapon"
-slingshot = Supply.create name: "Slingshot", value: 4, cost: 200, category: "weapon"
+slingshot = Supply.create name: "Slingshot", value: 5, cost: 200, category: "weapon"
+boomerang = Supply.create name: "Boomerang", value: 3, cost: 100, category: "weapon"
 
+greenhouse = Supply.create name: "Greenhouse", value: 40, cost: 2000, category: "food"  
 canned = Supply.create name: "Canned Goods - 1 week supply", value: 20, cost: 500, category: "food" 
 frozen = Supply.create name: "Frozen Goods - 1 week supply", value: 10, cost: 250, category: "food"  
-pantry = Supply.create name: "Pantry - Extra Food Storage", value: 50, cost: 1000, category: "food"  
+pantry = Supply.create name: "Pantry - Extra Food Storage", value: 30, cost: 1000, category: "food"  
+pizza = Supply.create name: "Pizza Delivery", value: 8, cost: 200, category: "food"  
 
 thatch = Supply.create name: "Thatched Roof", value: 5, cost: 200, category: "shelter"
 steel = Supply.create name: "Steel Roof", value: 50, cost: 2500, category: "shelter"
 brickwalls = Supply.create name: "Brick Walls", value: 25, cost: 1500, category: "shelter"
+concrete = Supply.create name: "Concrete Walls", value: 40, cost: 2000, category: "shelter"
 chainlink = Supply.create name: "Chain Link Fence", value: 10, cost: 500, category: "shelter"
+moat = Supply.create name: "Moat", value: 20, cost: 1000, category: "shelter"
+tent = Supply.create name: "Tent", value: 5, cost: 200, category: "shelter"
 
+friend = Supply.create name: "Friend", value: 40, cost: 2500, category: "health"
 swimmingpool = Supply.create name: "Swimming Pool", value: 10, cost: 1000, category: "health"
 netflix = Supply.create name: "Netflix", value: 15, cost: 1500, category: "health"
 gym = Supply.create name: "Gym", value: 10, cost: 750, category: "health"
@@ -51,3 +58,4 @@ hurricane = Disaster.create name: "Hurricane", food: 10, shelter: 35, weapon: 0,
 zombie = Disaster.create name: "Zombie Apocalypse", food: 10, shelter: 15, weapon: 45, health: 20
 coronavirus = Disaster.create name: "Coronavirus", food: 20, shelter: 0, weapon: 0, health: 30
 nuclearwar = Disaster.create name: "Nuclear War", food: 50, shelter: 50, weapon: 50, health: 50
+aliens = Disaster.create name: "Alien Invasion", food: 100, shelter: 100, weapon: 100, health: 100
