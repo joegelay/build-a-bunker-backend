@@ -23,7 +23,7 @@ ohiostreet = Bunker.create name: "Ohio Street", user: aaron
 treehouse = Bunker.create name: "Treehouse", user: jared
 
 shotgun = Supply.create name: "Shotgun", value: 10, cost: 10, category: "weapon"
-rifle = Supply.create name: "Shotgun", value: 8, cost: 8, category: "weapon"
+rifle = Supply.create name: "Rifle", value: 8, cost: 8, category: "weapon"
 canned = Supply.create name: "Canned Goods - 1 week supply", value: 15, cost: 10, category: "food" 
 frozen = Supply.create name: "Frozen Goods - 1 week supply", value: 12, cost: 8, category: "food"  
 thatch = Supply.create name: "Thatched Roof", value: 4, cost: 5, category: "shelter"
