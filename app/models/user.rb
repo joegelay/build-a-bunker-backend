@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  has_many: bunkers
+  has_many :bunkers
 end

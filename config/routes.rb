@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :bunker_supplies
   resources :disasters
   resources :supplies
   resources :bunkers
